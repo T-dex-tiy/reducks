@@ -7,58 +7,55 @@
   <body>
     <h1>Lets add some items</h1>
     <div id="input">
-      <div class="">
+      <div class="color">
         <input type="text" placeholder="Enter Shirt Color"></div>
-      <select class="selector" name="Tshirt">
+      <div class=""><select class="size" name="Tshirt" >
         <option value="" disable selected hidden>Size</option>
-        <option value="XXSmall" class="size">XXSmall</option>
-        <option value="XSmall" class="size">XSmall</option>
-        <option value="Small" class="size">Small</option>
-        <option value="Medium" class="size">Medium</option>
-        <option value="Large" class="size">Large</option>
-        <option value="XLarge" class="size">XLarge</option>
-      </select>
-      <input type="text" placeholder="Enter Shirt Motto">
+        <option value="XXSmall">XXSmall</option>
+        <option value="XSmall">XSmall</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+        <option value="XLarge">XLarge</option>
+      </select></div>
+      <div class="Motto"><input type="text" id= "motto" placeholder="Enter Shirt Motto">
       <button type="button" name="button"
       id="submit_input"
-      >Sumbit</button>
+      >Sumbit</button></div>
     </div>
 
     <h2>I want to remove one</h2>
     <div class="remove">
-      ID<input type="id" name="" value="">
-      <button type="Remove" name="button">Remove</button>
+      ID<input type="id" id="id" value="">
+      <button type="Remove" id="remove" name="button">Remove</button>
 
     </div>
     <h2>What I gots</h2>
     <div id="output">
 
-    <table>
-        <tr>
-          <td><strong>ID</strong></td>
-          <td><strong>Color</strong></td>
-          <td><strong>Size</strong></td>
-          <td><strong>Motto</strong></td>
+      <table>
+      <tbody>
+        <thead>
+          <tr>ID</tr>
+          <tr>Color</tr>
+          <tr>Size</tr>
+          <tr>Motto</tr>
+        </thead>
+        <tr id = "id_output">
+
         </tr>
-        <tr>
-          <td class= "id">XXXX</td>
-          <td class = "color">XXXX</td>
-          <td class = "size">XXXX</td>
-          <td class = "motto">XXXX</td>
+        <tr id = "color_output">
+
         </tr>
-        <tr>
-          <td class= "id">XXXX</td>
-          <td class = "color">XXXX</td>
-          <td class = "size">XXXX</td>
-          <td class = "motto">XXXX</td>
+        <tr id = "size_output">
+
         </tr>
-        <tr>
-          <td class= "id">XXXX</td>
-          <td class = "color">XXXX</td>
-          <td class = "size">XXXX</td>
-          <td class = "motto">XXXX</td>
+        <tr id ="motto_output">
+
         </tr>
-      </table>
+      </tbody>
+    </table>
+
     </div>
 
 

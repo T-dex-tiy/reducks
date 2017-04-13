@@ -1,4 +1,4 @@
-module.exports = function reducer(state, action){
+module.exports = function reducer(state= [], action = {}){
   switch (action.type){
     case 'SHIRT@ADD':
       return[
@@ -13,6 +13,6 @@ module.exports = function reducer(state, action){
       return state.filter( shirt => shirt.id !== action.id)
   default:
     return state
-    
+
   }
 }
